@@ -1,1 +1,20 @@
+#!/bin/bash
 
+nbrandom=$RANDOM;
+nb=0;
+nbtentative=0;
+
+while [ "$nb" -n $nbrandom ]; do
+    echo -n "devinez ? : "; read nb
+    if [ "$nb" -lt $nbrandom ]; then 
+    echo "C'est plus grand !"
+    elif [ "$nb" -gt $nbrandom ]; then 
+    echo "C'est plus petit !"
+    elif [ -z "$nb" ]; then 
+    echo "entrez une valeur"
+    fi
+    nbtentative=$(($nbtentative + 1))
+done
+
+echo "felicitation! Vous avez trouvé $nbrandom en $nbtentative coups."
+exit 0;
