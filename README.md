@@ -1,5 +1,7 @@
 # TD-scripting-linux
 
+Dans ce tp nous devions faire trois script, un jeu du plus ou moins, un outil de sauvegarde et un youtube-dl.
+
 ## Jeu du plus ou moins 
 Le premier script est le jeu du plus ou moins codé en bash.
 
