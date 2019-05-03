@@ -1,1 +1,7 @@
+#!/bin/bash   
+
+echo "Entrez une URL"  
+read URL  
+youtube-dl -x "$URL" 2>/dev/null
+
 
